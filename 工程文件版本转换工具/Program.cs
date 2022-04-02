@@ -14,9 +14,17 @@ namespace 工程文件版本转换工具
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            try
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new MainWindow());
+            }
+            catch (Exception ex)
+            {
+                string[] exArray = { ex.Message };
+                Application.Run(new MessageWindow("错误：应用程序出现异常", exArray, 3));
+            }
         }
     }
 }

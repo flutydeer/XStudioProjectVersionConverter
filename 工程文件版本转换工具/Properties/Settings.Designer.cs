@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace 工程文件版本转换工具.Properties
+namespace ProjectVersionConverter.Properties
 {
 
 
