@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -33,9 +34,14 @@ namespace 工程文件版本转换工具
 
         private void MainWindow_Load(object sender, EventArgs e)
         {
+            Size size = Screen.PrimaryScreen.WorkingArea.Size;
+            Left = (size.Width - Width) / 2;
+            Top = (size.Height - Height) / 2;
+            WindowState = FormWindowState.Normal;
             InitListView();
             cbTargetVersion.SelectedIndex = cbTargetVersion.Items.IndexOf("X Studio 1.8.1(SVIP 6.0.0)");//设置目标版本下拉菜单默认值
             tbOutputPath.Text = Environment.CurrentDirectory;//设置输出目录的初始值为程序所在位置
+            pictureBoxTitleIcon.Image = Image.FromFile(Environment.CurrentDirectory + @"\Resources\icon.png");
         }
 
         private void InitListView()
@@ -174,7 +180,7 @@ namespace 工程文件版本转换工具
                     else
                     {
                         item.SubItems[2].Text = "失败";
-                        log.Add((i + 1).ToString() + "【失败】" + Path.GetFileName(path) + "因为" + result.Item2 + "\n");
+                        log.Add((i + 1).ToString() + Path.GetFileName(path) + "转换失败，因为" + result.Item2 + "\n");
                     }
                 }
                 string[] logArray = new string[log.Count];

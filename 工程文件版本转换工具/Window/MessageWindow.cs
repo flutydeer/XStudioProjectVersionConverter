@@ -20,6 +20,7 @@ namespace 工程文件版本转换工具
             Lable_Title.Text = Title;
             TextBox_Message.Lines = Message;
             Image imageTypeIcon = Properties.Resources.icon_info;
+            pictureBoxTitleIcon.Image = Image.FromFile(Environment.CurrentDirectory + @"\Resources\icon.png");
             switch (Type)
             {
                 case 0:

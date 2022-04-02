@@ -113,7 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
-    <None Include="Resources\icon.png" />
+    <Content Include="Resources\icon.png" />
     <None Include="Resources\icon_warning.png" />
     <None Include="Resources\icon_info.png" />
     <None Include="Resources\icon_error.png" />

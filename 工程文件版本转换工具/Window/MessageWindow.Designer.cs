@@ -33,9 +33,9 @@
             this.BtnClose = new System.Windows.Forms.Button();
             this.Lable_Title = new System.Windows.Forms.Label();
             this.TextBox_Message = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxTitleIcon = new System.Windows.Forms.PictureBox();
             this.pictureBoxTypeIcon = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTitleIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTypeIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,20 +97,19 @@
             this.TextBox_Message.Multiline = true;
             this.TextBox_Message.Name = "TextBox_Message";
             this.TextBox_Message.ReadOnly = true;
-            this.TextBox_Message.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.TextBox_Message.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.TextBox_Message.Size = new System.Drawing.Size(431, 119);
             this.TextBox_Message.TabIndex = 22;
             this.TextBox_Message.Text = "提示文本";
             // 
-            // pictureBox2
+            // pictureBoxTitleIcon
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 8);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 23;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxTitleIcon.Location = new System.Drawing.Point(12, 8);
+            this.pictureBoxTitleIcon.Name = "pictureBoxTitleIcon";
+            this.pictureBoxTitleIcon.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxTitleIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxTitleIcon.TabIndex = 23;
+            this.pictureBoxTitleIcon.TabStop = false;
             // 
             // pictureBoxTypeIcon
             // 
@@ -129,7 +128,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(561, 238);
             this.Controls.Add(this.pictureBoxTypeIcon);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBoxTitleIcon);
             this.Controls.Add(this.TextBox_Message);
             this.Controls.Add(this.Button_OK);
             this.Controls.Add(this.BtnClose);
@@ -141,7 +140,7 @@
             this.Name = "MessageWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "提示";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTitleIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTypeIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -154,7 +153,7 @@
         private System.Windows.Forms.Button BtnClose;
         private System.Windows.Forms.Label Lable_Title;
         private System.Windows.Forms.TextBox TextBox_Message;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxTitleIcon;
         private System.Windows.Forms.PictureBox pictureBoxTypeIcon;
     }
 }

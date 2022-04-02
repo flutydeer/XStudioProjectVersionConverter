@@ -48,11 +48,11 @@
             this.BtnClose = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBoxTitleIcon = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTitleIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // listView1
@@ -318,21 +318,20 @@
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "本应用不保证转换过的文件能被目标版本的X Studio读取或保存。";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 3000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // pictureBoxTitleIcon
+            // 
+            this.pictureBoxTitleIcon.Location = new System.Drawing.Point(12, 7);
+            this.pictureBoxTitleIcon.Name = "pictureBoxTitleIcon";
+            this.pictureBoxTitleIcon.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxTitleIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxTitleIcon.TabIndex = 25;
+            this.pictureBoxTitleIcon.TabStop = false;
             // 
             // MainWindow
             // 
@@ -340,7 +339,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(715, 640);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxTitleIcon);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.BtnMinimize);
@@ -357,12 +356,13 @@
             this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
             this.Name = "MainWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "X Studio工程文件版本转换工具  B站：笛鹿FlutyDeer";
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTitleIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,7 +388,7 @@
         private System.Windows.Forms.Button BtnClose;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxTitleIcon;
         private System.Windows.Forms.Timer timer1;
     }
 }

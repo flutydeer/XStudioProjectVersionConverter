@@ -37,10 +37,10 @@
             this.ButtonCheckForUpdatesAtGitee = new System.Windows.Forms.Button();
             this.ButtonVisitGiteeHomepage = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBoxTitleIcon = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLarge = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTitleIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLarge)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnClose
@@ -168,25 +168,23 @@
             this.label1.Text = "X Studio工程文件版本转换工具 v1.1.0\r\n开发者：笛鹿FlutyDeer";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox2
+            // pictureBoxTitleIcon
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(183, 68);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxTitleIcon.Location = new System.Drawing.Point(12, 7);
+            this.pictureBoxTitleIcon.Name = "pictureBoxTitleIcon";
+            this.pictureBoxTitleIcon.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxTitleIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxTitleIcon.TabIndex = 24;
+            this.pictureBoxTitleIcon.TabStop = false;
             // 
-            // pictureBox1
+            // pictureBoxLarge
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxLarge.Location = new System.Drawing.Point(183, 68);
+            this.pictureBoxLarge.Name = "pictureBoxLarge";
+            this.pictureBoxLarge.Size = new System.Drawing.Size(128, 128);
+            this.pictureBoxLarge.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLarge.TabIndex = 20;
+            this.pictureBoxLarge.TabStop = false;
             // 
             // AboutWindow
             // 
@@ -194,8 +192,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(491, 459);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBoxTitleIcon);
+            this.Controls.Add(this.pictureBoxLarge);
             this.Controls.Add(this.ButtonCheckForUpdatesAtGitee);
             this.Controls.Add(this.ButtonCheckForUpdatesAtGitHub);
             this.Controls.Add(this.ButtonVisitDeveloperHomepage);
@@ -210,8 +208,8 @@
             this.Name = "AboutWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "关于";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTitleIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLarge)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,7 +225,7 @@
         private System.Windows.Forms.Button ButtonCheckForUpdatesAtGitee;
         private System.Windows.Forms.Button ButtonVisitGiteeHomepage;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxLarge;
+        private System.Windows.Forms.PictureBox pictureBoxTitleIcon;
     }
 }

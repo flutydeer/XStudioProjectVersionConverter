@@ -19,6 +19,8 @@ namespace 工程文件版本转换工具
         public AboutWindow()
         {
             InitializeComponent();
+            pictureBoxLarge.Image = Image.FromFile(Environment.CurrentDirectory + @"\Resources\icon.png");
+            pictureBoxTitleIcon.Image = Image.FromFile(Environment.CurrentDirectory + @"\Resources\icon.png");
         }
 
         private void BtnMinimize_Click(object sender, EventArgs e)
